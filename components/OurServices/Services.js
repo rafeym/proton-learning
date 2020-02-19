@@ -1,41 +1,12 @@
+import Level from './Level'
+
 const Services = () => {
   return (
     <>
-      <nav class='level is-mobile'>
-        <div class='level-item has-text-centered'>
-          <figure class='image is-128x128'>
-            <img
-              class='is-rounded'
-              src='https://gradepowerlearning.com/wp-content/uploads/2015/10/icon-memory-retention.png'
-            />
-          </figure>
-        </div>
-        <div class='level-item has-text-centered'>
-          <figure class='image is-128x128'>
-            <img
-              class='is-rounded'
-              src='https://gradepowerlearning.com/wp-content/uploads/2015/10/icon-study-skills.png'
-            />
-          </figure>
-        </div>
-        <div class='level-item has-text-centered'>
-          <figure class='image is-128x128'>
-            <img
-              class='is-rounded'
-              src='https://gradepowerlearning.com/wp-content/uploads/2015/10/icon-academic-confidence.png'
-            />
-          </figure>
-        </div>
-        <div class='level-item has-text-centered'>
-          <figure class='image is-128x128'>
-            <img
-              class='is-rounded'
-              src='https://www.oxfordlearning.com/wp-content/uploads/2015/10/icon-geometric.png'
-            />
-          </figure>
-        </div>
-      </nav>
-      <h3 id='serviceTitle'>Proton Learning has all the answers</h3>
+      <h3 id='serviceTitle'>We've got you covered</h3>
+      {/* <nav class='level is-mobile'>
+        <Level />
+      </nav> */}
       <p className='serviceParagraph'>
         We make sure that our students get personalized attention in our small
         group of classes.
