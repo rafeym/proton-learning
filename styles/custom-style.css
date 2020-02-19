@@ -11869,10 +11869,6 @@ body {
 }
 
 /* Landing Page styling (Hero) START*/
-#columns-container {
-  margin-top: -5em;
-}
-
 #landingPageHero {
   background-color: #00bfcc !important;
 }
@@ -11907,7 +11903,78 @@ body {
   margin-right: -5em;
 }
 
+@-webkit-keyframes do-levitation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0.8em);
+            transform: translate(0, 0.8em);
+  }
+}
+
+@keyframes do-levitation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0.8em);
+            transform: translate(0, 0.8em);
+  }
+}
+
+.levitate {
+  -webkit-animation: do-levitation 2s alternate ease-in-out infinite;
+          animation: do-levitation 2s alternate ease-in-out infinite;
+}
+
 /* Landing Page styling (Hero) END*/
+/* Our Rules page Styling Start*/
+#cuntCont {
+  border: 2px solid black;
+}
+
+.ruleNumber {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.ruleTitle {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+/* About Page styling (Hero) END*/
+#aboutColumnsContainer {
+  margin-top: -10em !important;
+}
+
+#aboutTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000 !important;
+}
+
+.aboutParagraph {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000 !important;
+  margin-top: 1em;
+  line-height: 1.6;
+}
+
+/* About Page styling (Hero) END*/
 /* services section START */
 #serviceTitle {
   font-family: "Playfair Display", serif;
@@ -11941,6 +12008,7 @@ body {
 }
 
 /* services section END */
+/* Banner sections START */
 #heroBanner {
   background-color: #00bfcc !important;
 }
@@ -11952,4 +12020,30 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
+/* Banner sections END */
+/* MEDIA QUERIES START */
+@media (max-width: 768px) {
+  #mainTitle {
+    font-size: 35px !important;
+    text-align: center;
+  }
+  #subHeading {
+    font-size: 18px;
+    text-align: center;
+  }
+  #hero-image {
+    display: none;
+  }
+  #hero-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* MEDIA QUERIES END */
 /*# sourceMappingURL=custom-style.css.map */
