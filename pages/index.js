@@ -1,13 +1,17 @@
 import LandingPage from '../components/Index/LandingPage'
-import OurServices from '../components/Index/OurServices'
+import OurRules from '../components/OurRules/OurRules'
+import About from '../components/About/About'
+import OurServices from '../components/OurServices/OurServices'
 import Banner from '../components/Banner/Banner'
 
 const Index = () => {
   return (
     <>
       <LandingPage />
-      <OurServices />
-      <Banner text='At Proton we ensure success, and excellence for all our students' />
+      <OurRules />
+      {/* <About /> */}
+      {/* <OurServices />
+      <Banner text='At Proton we ensure success, and excellence for all our students' /> */}
     </>
   )
 }
