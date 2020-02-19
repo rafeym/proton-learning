@@ -1,13 +1,29 @@
 // $primary: red;
 @import '../node_modules/bulma/bulma.sass';
 
+//Font variables
 $poppins-font: 'Poppins', sans-serif !important;
 $playfair-font: 'Playfair Display', serif;
 
+// Color Variables
 $darkturquoise: #00bfcc !important;
 $goldenrod: #f9c635 !important;
 $white: #fff !important;
 $black: #000 !important;
+
+// Breakpoint Variables
+$break-point-mobile: 768px;
+
+$break-point-tablet-min: 769px;
+$break-point-tablet-max: 1023px;
+
+$break-point-desktop-min: 1024px;
+$break-point-desktop-max: 1215px;
+
+$break-point-widescreen-min: 1216px;
+$break-point-widescreen-max: 1407px;
+
+$break-point-full-hd: 1408px;
 
 html,
 body {
@@ -28,8 +44,7 @@ body {
 
 /* Landing Page styling (Hero) START*/
 #columns-container {
-  //   border: 2px solid black !important;
-  margin-top: -5em;
+  // margin-top: -5em;
 }
 
 #landingPageHero {
@@ -67,14 +82,76 @@ body {
   margin-right: -5em;
 }
 
+@keyframes do-levitation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0.8em);
+  }
+}
+
+.levitate {
+  animation: do-levitation 2s alternate ease-in-out infinite;
+}
+
 /* Landing Page styling (Hero) END*/
 
-/* services section START */
+/* Our Rules page Styling Start*/
 
-#servicesColumnsContainer {
-  // margin-top: -5em !important;
-  // border: 2px solid $black;
+#cuntCont {
+  border: 2px solid black;
 }
+
+.ruleNumber {
+  font-family: $playfair-font;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  // border: 2px solid $darkturquoise;
+  border-radius: 50%;
+  // width: 40px;
+  // height: 40px;
+  text-align: center;
+}
+
+.ruleTitle {
+  text-align: center;
+  font-size: 24px;
+  font-family: $poppins-font;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+/* About Page styling (Hero) END*/
+
+#aboutColumnsContainer {
+  margin-top: -10em !important;
+}
+
+#aboutTitle {
+  font-family: $playfair-font;
+  font-size: 40px;
+  font-weight: 700;
+  color: $black;
+}
+
+.aboutParagraph {
+  font-family: $poppins-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: $black;
+  margin-top: 1em;
+  line-height: 1.6;
+}
+
+/* About Page styling (Hero) END*/
+
+/* services section START */
+// #servicesColumnsContainer {
+//   margin-top: -5em !important;
+//   border: 2px solid $black;
+// }
 
 #serviceTitle {
   font-family: $playfair-font;
@@ -106,9 +183,9 @@ body {
   border-radius: 5px;
   border: none;
 }
-
 /* services section END */
 
+/* Banner sections START */
 #heroBanner {
   background-color: $darkturquoise;
 }
@@ -119,3 +196,28 @@ body {
   font-weight: 700;
   text-align: center;
 }
+/* Banner sections END */
+
+/* MEDIA QUERIES START */
+@media (max-width: $break-point-mobile) {
+  //  Landing Page CSS
+  #mainTitle {
+    font-size: 35px !important;
+    text-align: center;
+  }
+
+  #subHeading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #hero-image {
+    display: none;
+  }
+
+  #hero-button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* MEDIA QUERIES END */
